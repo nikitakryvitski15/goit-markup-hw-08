@@ -1,0 +1,22 @@
+.images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  &__item {
+    position: relative;
+    display: inline-flex;
+  }
+  &__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: var(--white-color);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: var(--font-primary);
+    text-align: center;
+    background-color: var(--img-tittle-color);
+    bottom: 0;
+    padding: 27px;
+  }
+}

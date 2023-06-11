@@ -1,0 +1,26 @@
+.clients {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+  fill: currentColor;
+}
+.client__icon {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--company-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--company-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    border: 1px solid var(--hover-color);
+    fill: var(--hover-color);
+  }
+}

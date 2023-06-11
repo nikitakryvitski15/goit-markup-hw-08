@@ -1,0 +1,14 @@
+.logo {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.3;
+  color: var(--hover-color);
+  margin-right: 93px;
+  &--dark {
+    color: var(--studio-color);
+  }
+  &--light {
+    color: var(--white-color);
+  }
+}

@@ -1,0 +1,15 @@
+.section {
+  padding: 94px 0;
+  &--team {
+    background-color: var(--background-button);
+  }
+  &--padding {
+    padding-top: 0;
+  }
+  &__header {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+  }
+}

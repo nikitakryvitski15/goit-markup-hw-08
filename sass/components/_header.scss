@@ -1,0 +1,63 @@
+.header {
+  border-bottom: 1px solid var(--border-buttom);
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__contacts {
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--contacts-color);
+    gap: 50px;
+  }
+  &__contacts-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &__menu-link,
+  &__contacts-item {
+    color: var(--contacts-color);
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: var(--hover-color);
+    }
+  }
+  &__menu {
+    display: flex;
+    gap: 46px;
+    & a {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--brand-color);
+    }
+    &-link--active {
+      position: relative;
+    }
+    &-link--active::after {
+      content: "";
+      position: absolute;
+      top: 48px;
+      width: 53px;
+      height: 4px;
+      display: block;
+      background-color: var(--hover-color);
+      border-radius: 2px;
+    }
+  }
+}
+.icon--smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}

@@ -1,0 +1,37 @@
+.social-media {
+  margin-top: 12px;
+  &__title {
+    font-family: var(--font-primary);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--white-color);
+    letter-spacing: 0.06rem;
+  }
+  &__footer {
+    display: flex;
+    margin-top: 20px;
+  }
+  &__icons {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  &__link {
+    display: flex;
+    border-radius: 50%;
+    background-color: var(--icon-footer-color);
+    padding: 12px;
+    cursor: pointer;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__link:hover,
+  &__link:focus {
+    background-color: var(--hover-color);
+  }
+
+  &__icon {
+    fill: var(--white-color);
+  }
+}

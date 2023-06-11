@@ -1,0 +1,107 @@
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  &__label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--contacts-color);
+    padding-bottom: 4px;
+    position: relative;
+    border: none;
+    margin-left: 40px;
+  }
+  &__input {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #21212133;
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    display: inline-flex;
+    padding: 13px;
+    align-items: center;
+    padding-left: 42px;
+    cursor: pointer;
+    &:hover,
+    &:focus-within {
+      border: 1px solid var(--hover-color);
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+    }
+    &:hover + .form-modal__icon,
+    &:focus + .form-modal__icon {
+      fill: var(--hover-color);
+      outline: none;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 28px;
+    left: 12px;
+  }
+  &__comment {
+    margin-top: 4px;
+    border: 1px solid #21212133;
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    display: inline-flex;
+    padding: 13px;
+    align-items: center;
+    resize: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    &:hover,
+    &:focus {
+      border-color: var(--hover-color);
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.form-checkbox {
+  position: relative;
+  color: var(--contacts-color);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  &__input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+  &__icon {
+    fill: var(--white-color);
+    border: 2px solid #000000;
+    width: 16px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    cursor: pointer;
+    text-align: center;
+  }
+  &__input:checked + &__icon {
+    border-color: var(--hover-color);
+    background-color: var(--hover-color);
+  }
+  &__link {
+    position: relative;
+    display: inline;
+    color: var(--hover-color);
+  }
+}
