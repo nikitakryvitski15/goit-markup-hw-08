@@ -59,8 +59,8 @@
         </ul>
       </div>
     </header> -->
-    <!-- <main>
-      <section class="section slogan">
+    <main>
+      <!-- <section class="section slogan">
         <div class="container">
           <h1 class="slogan__tittle">
             EFEKTYWNE ROZWIĄZANIA<br />
@@ -69,12 +69,12 @@
           <button data-modal-open type="button" class="slogan__button">
             Zamów usługe
           </button>
-        </div> -->
-      </section>
+        </div>
+      </section> -->
       <section class="section">
         <div class="container">
           <ul class="lorems">
-            <li>
+            <li class="lorems__items">
               <svg class="lorems__icon">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
@@ -84,7 +84,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="lorems__items">
               <svg class="lorems__icon">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
@@ -94,7 +94,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="lorems__items">
               <svg class="lorems__icon">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
@@ -104,7 +104,7 @@
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="lorems__items">
               <svg class="lorems__icon">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
@@ -117,7 +117,7 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section section--padding">
+      <section class="section section--padding">
         <div class="container">
           <h2 class="section__header">Czym się zajmujemy</h2>
           <ul class="images">
@@ -343,48 +343,48 @@
             </li>
           </ul>
         </div>
-      </section> -->
-      <!-- <section class="section">
+      </section>
+      <section class="section">
         <div class="container">
           <h2 class="section__header">Nasi klienci</h2>
           <ul class="clients">
             <li>
-              <a class="client__icon">
+              <a class="clients__icon">
                 <svg width="106" height="60">
                   <use href="images/icons.svg#icon-company1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="client__icon">
+              <a class="clients__icon">
                 <svg width="106" height="60">
                   <use href="images/icons.svg#icon-company2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="client__icon">
+              <a class="clients__icon">
                 <svg width="106" height="60">
                   <use href="images/icons.svg#icon-company3"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="client__icon">
+              <a class="clients__icon">
                 <svg width="106" height="60">
                   <use href="images/icons.svg#icon-company4"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="client__icon">
+              <a class="clients__icon">
                 <svg width="106" height="60">
                   <use href="images/icons.svg#icon-company5"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="client__icon">
+              <a class="clients__icon">
                 <svg width="106" height="60">
                   <use href="images/icons.svg#icon-company6"></use>
                 </svg>
@@ -392,68 +392,72 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <footer class="footer">
       <div class="container container--footer">
-        <div>
-          <a class="logo" href="index.html"
-            >Web<span class="logo--light">Studio</span></a
-          >
-          <address>
-            <ul class="footer__contacts">
-              <li class="footer__contacts-item footer--adress">
-                m. Warszawa, Aleje Jerozolimskie 21
+        <div class="footer__high">
+          <div class="footer-left__side">
+            <a class="logo-footer" href="index.html"
+              >Web<span class="logo--light">Studio</span></a
+            >
+            <address>
+              <ul class="footer__contacts">
+                <li class="footer__contacts-item footer--adress">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
+                <li>
+                  <a
+                    class="footer__contacts-item"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contacts-item" href="tel:+48 111 111 111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-media">
+            <h3 class="social-media__title">DOŁĄCZ DO NAS</h3>
+            <ul class="social-media__footer">
+              <li class="social-media__icons">
+                <a class="social-media__link">
+                  <svg class="social-media__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="footer__contacts-item" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="social-media__icons">
+                <a class="social-media__link">
+                  <svg class="social-media__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="footer__contacts-item" href="tel:+48 111 111 111"
-                  >+48 111 111 111</a
-                >
+              <li class="social-media__icons">
+                <a class="social-media__link">
+                  <svg class="social-media__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__icons">
+                <a class="social-media__link">
+                  <svg class="social-media__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social-media">
-          <h3 class="social-media__title">DOŁĄCZ DO NAS</h3>
-          <ul class="social-media__footer">
-            <li class="social-media__icons">
-              <a class="social-media__link">
-                <svg class="social-media__icon" width="20" height="20">
-                  <use href="images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icons">
-              <a class="social-media__link">
-                <svg class="social-media__icon" width="20" height="20">
-                  <use href="images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icons">
-              <a class="social-media__link">
-                <svg class="social-media__icon" width="20" height="20">
-                  <use href="images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icons">
-              <a class="social-media__link">
-                <svg class="social-media__icon" width="20" height="20">
-                  <use href="images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-mail">
           <h3 class="footer-mail__header">ZAPISZ SIĘ DO NEWSLETTERA</h3>
-          <form>
+          <form class="footer-mail__form">
             <input
               class="footer-mail__input"
               type="email"
@@ -470,7 +474,7 @@
         </div>
       </div>
     </footer>
-    <div data-modal class="backdrop is-hidden">
+    <!-- <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="modal__button-close">
           X
@@ -521,7 +525,7 @@
           <button class="modal__button-submit" type="submit">Wyślij</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -7,6 +7,11 @@
     line-height: 1.14;
     color: var(--white-color);
     letter-spacing: 0.06rem;
+    text-align: center;
+    @include desktop {
+      text-align: start;
+      margin-top: 12px;
+    }
   }
   &__footer {
     display: flex;

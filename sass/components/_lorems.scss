@@ -2,18 +2,27 @@
   display: flex;
   gap: 30px;
   flex-direction: column;
-
   @include tablet {
+    min-width: 768px;
     flex-direction: row;
     flex-wrap: wrap;
   }
-
   @include desktop {
+    max-width: 1200px;
     flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
   }
+  &__items {
+    max-width: 450px;
 
+    @include tablet {
+      max-width: 354px;
+    }
+    @include desktop {
+      width: 270px;
+    }
+  }
   &__icon {
     width: 270px;
     height: 120px;

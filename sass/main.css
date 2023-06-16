@@ -57,6 +57,16 @@ a {
   margin: 0 auto;
   padding: 0 15px;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 .container--header {
   display: flex;
   height: 80px;
@@ -182,6 +192,21 @@ a {
   display: flex;
   gap: 30px;
   flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .lorems {
+    min-width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .lorems {
+    max-width: 1200px;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .lorems__icon {
   width: 270px;

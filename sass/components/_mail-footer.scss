@@ -8,9 +8,21 @@
     line-height: 1.14;
     color: var(--white-color);
     letter-spacing: 0.06rem;
+    text-align: center;
+    text-transform: uppercase;
+    @include desktop {
+      text-align: start;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+    }
   }
   &__input {
-    margin-top: 20px;
+    margin: 20px;
     border: 1px solid #ffffff4d;
     box-shadow: 0px 4px 4px 0px #00000026;
     border-radius: 4px;
@@ -22,6 +34,8 @@
   }
 }
 .footer-submit {
+  width: 200px;
+  height: 50px;
   background-color: var(--hover-color);
   border: 1px solid var(--hover-color);
   border-radius: 4px;
@@ -38,6 +52,10 @@
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+  margin: 0 auto;
+  @include desktop {
+    margin: auto;
+  }
   &__icon {
     margin-left: 24px;
   }

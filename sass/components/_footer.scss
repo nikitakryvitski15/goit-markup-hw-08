@@ -1,7 +1,20 @@
 .footer {
   background-color: var(--footer-color);
-  padding: 60px 0;
-
+  padding: 60px 0px;
+  &__high {
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      gap: 144px;
+    }
+  }
+  &-left__side {
+    text-align: center;
+    padding-bottom: 60px;
+    @include desktop {
+      text-align: start;
+    }
+  }
   &__contacts a {
     font-style: normal;
     font-size: 14px;
