@@ -21,15 +21,76 @@
     <link href="./css/main.min.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container--header">
         <nav class="header__nav">
           <a class="logo" href="index.html"
             >Web<span class="logo--dark">Studio</span></a
           >
+          <button
+            type="button"
+            class="header__hamburger js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle__button" width="40px" height="40px">
+              <use href="images/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+          <div
+            class="menu-container js-menu-container is-open"
+            id="mobile-menu"
+          >
+            <button
+              type="button"
+              class="menu-container__close-btn js-close-menu"
+            >
+              <svg width="18px" height="18px">
+                <use href="images/icons.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu">
+              <li><a href="#" class="mobile-menu__link">Agencja</a></li>
+              <li><a href="#" class="mobile-menu__link">Portfolio</a></li>
+              <li><a href="#" class="mobile-menu__link">Kontakt</a></li>
+            </ul>
+            <div>
+              <ul class="mobile-contacts">
+                <li>
+                  <a href="tel:+48 111 111 111" class="mobile-contacts__link"
+                    >+48 111 111 111</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-contacts__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-social">
+                <li>
+                  <a href="" class="mobile-social__link">Instagram</a>
+                  <span class="mobile-social__line"></span>
+                </li>
+
+                <li>
+                  <a href="" class="mobile-social__link">Twitter</a>
+                  <span class="mobile-social__line"></span>
+                </li>
+
+                <li>
+                  <a href="" class="mobile-social__link">Facebook</a>
+                  <span class="mobile-social__line"></span>
+                </li>
+                <li><a href="" class="mobile-social__link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
           <ul class="header__menu">
             <li class="header__menu-link--active">
-              <a class="header__menu-link" href="index.html">Agencja </a>
+              <a class="header__menu-link" href="index.html">Agencja</a>
             </li>
             <li>
               <a class="header__menu-link" href="portfolio.html">Portfolio</a>
@@ -58,9 +119,9 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="section slogan">
+      <section class="section slogan">
         <div class="container">
           <h1 class="slogan__tittle">
             EFEKTYWNE ROZWIĄZANIA<br />
@@ -70,7 +131,7 @@
             Zamów usługe
           </button>
         </div>
-      </section> -->
+      </section>
       <section class="section">
         <div class="container">
           <ul class="lorems">
@@ -172,6 +233,15 @@
                   width="270"
                   height="260"
                   alt="Product Designer"
+                  srcset="
+                    images/john_doe_1_450.jpg    450w,
+                    images/john_doe_1_450@2x.jpg 900w,
+                    images/john_doe_1_354.jpg    354w,
+                    images/john_doe_1_354@2x.jpg 708w,
+                    images/john_doe_1_270.jpg    270w,
+                    images/john_doe_1_270@2x.jpg 540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <figcaption class="team__box">
                   <h4 class="team__name">John Doe</h4>
@@ -216,6 +286,15 @@
                   width="270"
                   height="260"
                   alt="Frontend Developer"
+                  srcset="
+                    images/john_doe_2_450.jpg    450w,
+                    images/john_doe_2_450@2x.jpg 900w,
+                    images/john_doe_2_354.jpg    354w,
+                    images/john_doe_2_354@2x.jpg 708w,
+                    images/john_doe_2_270.jpg    270w,
+                    images/john_doe_2_270@2x.jpg 540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <figcaption class="team__box">
                   <h4 class="team__name">John Doe</h4>
@@ -260,6 +339,15 @@
                   width="270"
                   height="260"
                   alt="Marketing"
+                  srcset="
+                    images/john_doe_3_450.jpg    450w,
+                    images/john_doe_3_450@2x.jpg 900w,
+                    images/john_doe_3_354.jpg    354w,
+                    images/john_doe_3_354@2x.jpg 708w,
+                    images/john_doe_3_270.jpg    270w,
+                    images/john_doe_3_270@2x.jpg 540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <figcaption class="team__box">
                   <h4 class="team__name">John Doe</h4>
@@ -304,6 +392,15 @@
                   width="270"
                   height="260"
                   alt="UI Designer"
+                  srcset="
+                    images/john_doe_4_450.jpg    450w,
+                    images/john_doe_4_450@2x.jpg 900w,
+                    images/john_doe_4_354.jpg    354w,
+                    images/john_doe_4_354@2x.jpg 708w,
+                    images/john_doe_4_270.jpg    270w,
+                    images/john_doe_4_270@2x.jpg 540w
+                  "
+                  sizes="(min-width: 768px) 354px, (min-width: 1200px) 270px, 100vw"
                 />
                 <figcaption class="team__box">
                   <h4 class="team__name">John Doe</h4>
@@ -474,7 +571,7 @@
         </div>
       </div>
     </footer>
-    <!-- <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <button data-modal-close type="button" class="modal__button-close">
           X
@@ -525,7 +622,14 @@
           <button class="modal__button-submit" type="submit">Wyślij</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

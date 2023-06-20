@@ -27,7 +27,7 @@
     gap: 60px;
     @include desktop {
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: space-between;
       align-items: baseline;
     }
   }

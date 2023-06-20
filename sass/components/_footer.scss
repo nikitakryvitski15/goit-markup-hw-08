@@ -7,6 +7,12 @@
       flex-direction: row;
       gap: 144px;
     }
+    @include desktop {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 70px;
+    }
   }
   &-left__side {
     text-align: center;
