@@ -12,6 +12,12 @@
   padding: 32px;
   transform: translate(100%);
   transition: transform 250ms ease;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
   &__close-btn {
     position: absolute;
     top: 21px;
@@ -26,15 +32,18 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-  @include desktop {
-    display: none;
-  }
 }
 .mobile-menu {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
   gap: 32px;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
   &__link {
     font-family: var(--font-primary);
     font-size: 40px;

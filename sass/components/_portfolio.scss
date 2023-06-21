@@ -1,27 +1,35 @@
 .portfolio {
+  max-width: 480px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 30px;
-
+  flex-direction: column;
+  gap: 21px;
+  @include tablet {
+    min-width: 768px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
   &__card {
     border: 1px solid #eeeeee;
     cursor: pointer;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
     &:hover,
     &:focus {
       box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
         0px 1px 1px 0px #0000001f;
     }
   }
-
   &__overlay {
     position: relative;
     overflow: hidden;
-
     & > img {
       display: block;
       width: 100%;
@@ -29,7 +37,6 @@
       object-fit: cover;
     }
   }
-
   &__description {
     position: absolute;
     top: 0;
@@ -48,7 +55,6 @@
   &__card:hover &__description {
     transform: translateY(0);
   }
-
   &__title {
     font-size: 18px;
     line-height: 2;

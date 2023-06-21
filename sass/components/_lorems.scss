@@ -15,17 +15,18 @@
   }
   &__items {
     max-width: 450px;
-
     @include tablet {
       max-width: 354px;
     }
-    @include desktop {
-      width: 270px;
-    }
   }
-  &__icon {
-    width: 270px;
+  &__container__icon {
+    background-color: #f5f4fa;
+    border-radius: 4px;
     height: 120px;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   &__header {
     font-size: 14px;

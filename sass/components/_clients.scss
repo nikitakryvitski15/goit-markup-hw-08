@@ -4,12 +4,6 @@
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  @include tablet {
-    min-width: 768px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   @include desktop {
     display: flex;
     justify-content: space-between;

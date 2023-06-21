@@ -27,9 +27,76 @@
           <a class="logo" href="index.html"
             >Web<span class="logo--dark">Studio</span></a
           >
+          <button
+            type="button"
+            class="header__hamburger js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-toggle__button" width="40px" height="40px">
+              <use href="images/icons.svg#icon-menu_24px"></use>
+            </svg>
+          </button>
+          <div
+            class="menu-container js-menu-container is-open"
+            id="mobile-menu"
+          >
+            <button
+              type="button"
+              class="menu-container__close-btn js-close-menu"
+            >
+              <svg width="18px" height="18px">
+                <use href="images/icons.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu">
+              <li>
+                <a href="index.html" class="mobile-menu__link">Agencja</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="mobile-menu__link">Portfolio</a>
+              </li>
+              <li>
+                <a href="index.html" class="mobile-menu__link">Kontakt</a>
+              </li>
+            </ul>
+            <div>
+              <ul class="mobile-contacts">
+                <li>
+                  <a href="tel:+48 111 111 111" class="mobile-contacts__link"
+                    >+48 111 111 111</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-contacts__link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-social">
+                <li>
+                  <a href="" class="mobile-social__link">Instagram</a>
+                  <span class="mobile-social__line"></span>
+                </li>
+
+                <li>
+                  <a href="" class="mobile-social__link">Twitter</a>
+                  <span class="mobile-social__line"></span>
+                </li>
+
+                <li>
+                  <a href="" class="mobile-social__link">Facebook</a>
+                  <span class="mobile-social__line"></span>
+                </li>
+                <li><a href="" class="mobile-social__link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
           <ul class="header__menu">
             <li>
-              <a class="header__menu-link" href="index.html">Agencja </a>
+              <a class="header__menu-link" href="index.html">Agencja</a>
             </li>
             <li class="header__menu-link--active">
               <a class="header__menu-link" href="portfolio.html">Portfolio</a>
@@ -282,64 +349,68 @@
     </main>
     <footer class="footer">
       <div class="container container--footer">
-        <div>
-          <a class="logo" href="index.html"
-            >Web<span class="logo--light">Studio</span></a
-          >
-          <address>
-            <ul class="footer__contacts">
-              <li class="footer__contacts-item footer--adress">
-                m. Warszawa, Aleje Jerozolimskie 21
+        <div class="footer__high">
+          <div class="footer-left__side">
+            <a class="logo-footer" href="index.html"
+              >Web<span class="logo--light">Studio</span></a
+            >
+            <address>
+              <ul class="footer__contacts">
+                <li class="footer__contacts-item footer--adress">
+                  m. Warszawa, Aleje Jerozolimskie 21
+                </li>
+                <li>
+                  <a
+                    class="footer__contacts-item"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li>
+                  <a class="footer__contacts-item" href="tel:+48 111 111 111"
+                    >+48 111 111 111</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-media">
+            <h3 class="social-media__title">DOŁĄCZ DO NAS</h3>
+            <ul class="social-media__footer">
+              <li class="social-media__icons">
+                <a class="social-media__link">
+                  <svg class="social-media__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="footer__contacts-item" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="social-media__icons">
+                <a class="social-media__link">
+                  <svg class="social-media__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="footer__contacts-item" href="tel:+48 111 111 111"
-                  >+48 111 111 111</a
-                >
+              <li class="social-media__icons">
+                <a class="social-media__link">
+                  <svg class="social-media__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__icons">
+                <a class="social-media__link">
+                  <svg class="social-media__icon" width="20" height="20">
+                    <use href="images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social-media">
-          <h3 class="social-media__title">DOŁĄCZ DO NAS</h3>
-          <ul class="social-media__footer">
-            <li class="social-media__icons">
-              <a class="social-media__link">
-                <svg class="social-media__icon" width="20" height="20">
-                  <use href="images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icons">
-              <a class="social-media__link">
-                <svg class="social-media__icon" width="20" height="20">
-                  <use href="images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icons">
-              <a class="social-media__link">
-                <svg class="social-media__icon" width="20" height="20">
-                  <use href="images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__icons">
-              <a class="social-media__link">
-                <svg class="social-media__icon" width="20" height="20">
-                  <use href="images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-mail">
           <h3 class="footer-mail__header">ZAPISZ SIĘ DO NEWSLETTERA</h3>
-          <form>
+          <form class="footer-mail__form">
             <input
               class="footer-mail__input"
               type="email"
@@ -356,5 +427,13 @@
         </div>
       </div>
     </footer>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

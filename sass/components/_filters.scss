@@ -1,9 +1,21 @@
 .filters {
-  justify-content: center;
-  color: var(--brand-color);
   display: flex;
-  column-gap: 8px;
+  gap: 21px;
+  flex-wrap: wrap;
   margin-bottom: 50px;
+  @include tablet {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    color: var(--brand-color);
+    gap: 8px;
+    margin-bottom: 50px;
+  }
   &__btn {
     border: none;
     font-size: 16px;
