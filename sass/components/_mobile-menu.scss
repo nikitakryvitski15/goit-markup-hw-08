@@ -12,6 +12,7 @@
   padding: 32px;
   transform: translate(100%);
   transition: transform 250ms ease;
+  z-index: 2;
   @include tablet {
     display: none;
   }
